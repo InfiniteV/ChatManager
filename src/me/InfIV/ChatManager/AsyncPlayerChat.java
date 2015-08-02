@@ -35,7 +35,7 @@ public class AsyncPlayerChat implements Listener {
 		}else{
 			
 			f1 = f1.replaceAll("%message", ChatColor.stripColor(e.getMessage()));
-			for(Player p: Bukkit.getOnlinePlayers()){
+			for(Player p: e.getRecipients()){
 				if(ChatManager.isFactions()){
 					p.sendMessage(Facs.replace(f1, e.getPlayer(), p));
 				}else{
