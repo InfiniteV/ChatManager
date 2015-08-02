@@ -1,0 +1,11 @@
+name: ChatManager
+version: 2.1
+main: me.InfIV.ChatManager.ChatManager
+depend: [Vault]
+softdepend: [MassiveCore, Factions]
+author: [InfIV]
+commands:
+   ChatManager:
+     description: Default ChatManager command!
+   clearchat:
+     description: Clear the chat!
